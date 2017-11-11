@@ -11,15 +11,15 @@ define('CREDENTIALS_PATH', '~/.credentials/calendar-php-quickstart.json');
 define('CLIENT_SECRET_PATH', __DIR__ . '/client_secret.json');
 
 // Fill CLIENT ID, CLIENT SECRET ID, REDIRECT URI from Google Developer Console
- $client_id = '856397577057-iptap45o92o99ldu6f1ndbn7qg22ug1u.apps.googleusercontent.com';
- $client_secret = 'R_DAT9tLTqpFD2LQzoHZaMsv';
+ $client_id = '';
+ $client_secret = '';
  $redirect_uri = 'http://localhost/calendar/';
- $simple_api_key = 'AIzaSyAAHyu0_6qr5IP5_swu0N9Kl3xwcSTraGY';
+ $simple_api_key = '';
  
  
 //Create Client Request to access Google API
 $client = new Google_Client();
-$client->setApplicationName("Finance Manager");
+$client->setApplicationName("");
     $client->setAuthConfigFile(CLIENT_SECRET_PATH);
 $client->setAccessType('offline');
 $client->addScope("https://www.googleapis.com/auth/userinfo.email"." https://www.googleapis.com/auth/calendar"." https://www.googleapis.com/auth/calendar.readonly");
